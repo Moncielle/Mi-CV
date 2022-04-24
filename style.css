@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+img{
+    width: 140px;
+    border-radius: 20px;
+}
+
+body{
+    background: linear-gradient(to right, #3525af, #9153c9);
+}
+
+.contenedor{
+    width: 850px;
+    background: #fff;
+    margin: 25px auto;
+    display: flex;
+}
+
+.izquierda{
+    background: #292b2f;
+    width: 300px;
+    padding: 0 20px;
+}
+
+.derecha{
+    width: calc(100% 300px);
+}
+
+.izquierda .image-profile{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cc{
+    padding-bottom: 20px;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: #3525af;
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.titulo:before{
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background: #3525af;
+}
+
+.izquierda .icon{
+    font-size: 20px;
+    color: #9153c9;
+}
+
+.izquierda .contacto .texto{
+    color: #fff;
+    font-size: 13px;
+}
+
+.contacto .li-wrap{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contacto .li-wrap .icon{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.contacto .li-wrap .texto{
+    width: calc(100% - 68px);
+}
+
+.skills ul,
+.hobbies ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .texto,
+.hobbies .texto{
+    color: #9153c9;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.skills .li-wrap,
+.hobbies .li-wrap{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .li-wrap{
+    background: #fff;
+}
+
+.skills .li-wrap:hover{
+    background: #000;
+}
+
+.skills .li-wrap:hover .icon,
+.skills .li-wrap:hover .texto{
+	color: #fff;
+}
+
+.hobbies .li-wrap{
+    border: 2px solid #9153c9;
+}
+
+.hobbies .li-wrap .icon,
+.hobbies .li-wrap .texto{
+    color: #fff;
+}
+
+.hobbies .li-wrap:hover{
+    background: #9153c9;
+}
+
+.hobbies .li-wrap:hover .icon,
+.hobbies .li-wrap:hover .texto{
+	color: #000;
+}
+
+.header{
+    background: #292b2f;
+    padding: 15px 30px;
+    color: #fff;
+    height: 240px;
+}
+
+.header .name-rol h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #3525af;
+    text-align: center;
+}
+
+.header .nombre h2{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #9153c9;
+}
+
+.header .rol{
+    margin-top: 4px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.header .about{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: justify;
+}
+
+.derecha-interno{
+    padding: 30px;
+    color: #292b2f;
+}
+
+.derecha-interno .experiencia{
+    margin-top: 30px;
+}
+
+.derecha-interno .aptitudes{
+    margin-top: 30px;
+}
+
+.derecha-interno .conocimientos{
+    margin-top: 30px;
+}
+
+.derecha-interno .li-wrap{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.derecha-interno .li-wrap .fecha{
+    width: 125px;
+    color: #9153c9;
+    font-size: 18px;
+}
+
+.derecha-interno .li-wrap .info{
+    width: calc(100% - 20px);
+    padding-left: 25px;
+    position: relative;
+}
+
+.derecha-interno .li-wrap .info-titulo{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #9153c9;
+}
+
+.derecha-interno .li-wrap .info-nivel{
+    font-weight: 550;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.derecha-interno .li-wrap .info-contenido{
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.derecha-interno .li-wrap .info:before{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #9153c9;
+    border-radius: 50%;
+}
+
+.derecha-interno .li-wrap .info:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    height: 90%;
+    background: #9153c9;
+}
+
+.derecha-interno .info-contenido-lista li{
+    list-style:inside;
+    list-style-position: outside;
+}
+
+.derecha-interno .info-contenido-lista{
+    padding-left: 20px;
+    text-align: justify;
+    font-size: 16px;
+}
